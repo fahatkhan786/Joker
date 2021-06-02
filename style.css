@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+*{
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: 'Poppins', sans-serif;
+  box-sizing: border-box;
+  user-select: none;
+}
+.back{
+	width: 50%;
+    height: 100vh;
+    position: fixed;
+    margin: -50px 0 0 800px;
+    transform: rotate(30deg);
+    opacity: .7;
+    z-index: -99;
+}
+.back img{
+	height: 100%;
+	width: 100%;
+	filter: invert(.1);
+}
+.back2{
+	width: 50%;
+    height: 100vh;
+    position: fixed;
+    margin: -100px 0 0 -100px;
+    transform: rotate(-20deg);
+    opacity: .3;
+    z-index: -99;
+}
+.back2 img{
+	height: 120%;
+	width: 80%;
+}
+.bg{
+	position: fixed;
+	height: 100vh;
+	width: 100%;
+	background: url(bg2.jpg) no-repeat center/cover;
+	z-index: -100;
+}
+header{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 30px 70px;
+	z-index: 100;
+}
+header .logo{
+	padding: 10px 15px;
+	max-width: 150px;
+}
+header .logo img{
+	width: 100%;
+	filter: invert(0);
+}
+header .toggle{
+	font-size: 35px;
+	color: #fff;
+	cursor: pointer;
+}
+header .toggle:hover{
+	color: #adadad;
+	opacity: .8;
+	transition: all 0.3s ease-in-out;
+}
+
+.banner{
+	position: relative;
+	top: 0;
+	left: 0;
+	height: 100vh;
+	width: 100%;
+	padding: 30px 70px;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)); 
+}
+.banner .content{
+	position: absolute;
+	bottom: 50px;
+	left: 200px;
+	max-width: 600px;
+	height: 250px;
+	padding: 15px 40px;
+	background: rgba(214, 218, 217, .5);
+}
+.content h2{
+	text-transform: uppercase;
+	font-size: 35px;
+	font-weight: 400px;
+	letter-spacing: 4px;
+	color: #333;
+}
+.content h2 span{
+	font-size: 38px;
+	font-weight: 800px;
+	color: #ff0000;
+}
+.content p{
+	font-weight: 300px;
+	font-size: 15px;
+	letter-spacing: 2px;
+	color: #333;
+	margin: 10px 0 25px 0;
+}
+.content .read{
+	font-size: 18px;
+	position: relative;
+	float: right;
+	right: 20px;
+	padding: 4px 12px;
+	background: #000;
+	cursor: pointer;
+}
+.content .read a{
+	color: #fff;
+	text-decoration: none;
+}
+.content .read a:hover ~ .read{
+	color: #adadad;
+	background: #000;
+}
+.content #blur.active{
+	filter: blur(20px);
+	pointer-events: none;
+	user-select: none;
+}
+.banner .trailer{
+	position: absolute;
+	bottom: 50%;
+	right: 50px;
+	max-width: 100%;
+	background: #000;
+	padding: 10px 20px;
+}
+.banner .trailer a{
+	margin-right: 10px;
+	width: 100%;
+	color: #fff;
+	opacity: 1;
+	font-size: 40px;
+}
+.banner .trailer span{
+	text-transform: uppercase;
+	font-size: 30px;
+	font-weight: 500px;
+	letter-spacing: 2px;
+}
+.banner .trailer a:hover{
+	color: #ddd;
+	opacity: .7;
+	transition: 0.1s ease-in-out;
+}
+
+.social{
+	position: absolute;
+	left: 50px;
+	bottom: 50px;
+	z-index: 100;
+}
+.social ul{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+} 
+.social ul li{
+	list-style: none;
+}
+.social ul li i{
+	margin: 15px;
+	font-size: 30px;
+	color: #111;
+	opacity: 1;
+}
+.social ul li i:hover{
+	color: #ddd;
+	opacity: .7;
+	transition: all 0.3s ease-in-out;
+	transform: translateX(15px);
+}
+.slide{
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	height: 230px;
+	width: 370px;
+	border: 2px solid #adadad;
+	cursor: pointer;
+	background: url(joker.png) no-repeat center/cover;
+	border-radius: 10px;
+	box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.2), 
+	              4px 4px 8px rgba(0, 0, 0, 0.8);
+	animation: anim 20s linear infinite;
+	z-index: 1000;
+}
+.slide:hover{
+	transition: all 0.5s ease-in-out;
+	border: 2px solid #fff;
+	box-shadow: -4px -4px 8px rgba(255, 255, 255, 0.5), 
+	              4px 4px 8px rgba(0, 0, 0, 1);
+	
+}
+@keyframes anim{
+	0%,100%{
+		background-position: top;
+		transition-delay: 1s;
+	}
+	40%,60%{
+		background-position: bottom;
+	}
+}
+
+
+
+
+

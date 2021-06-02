@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>	JOKER </title>
+	<link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+	<div class="bg"></div>
+	<div class="back">
+		<img src="joke.png">
+	</div>
+	<div class="back2">
+		<img src="back2.png">
+	</div>
+	<div class="container" id="blur">
+		<header>
+			<a href="#" class="logo"><img src="logo.png"></a>
+			<div class="toggle"><i class="fa fa-bars" aria-hidden="true"></i></div>
+		</header>
+		
+		<div class="banner">
+			<div class="content">
+				<div>
+					<h2>Put on a <span>happy</span> face</h2>
+					<span>
+						<p> “Smile, because it confuses people. Smile, because it's easier than explaining what is killing you inside.” “As you know, madness is like gravity...all it takes is a little push.” </p>
+					</span>
+					<div class="read">
+						<a href="#read" onclick="toggle()">Close</a>
+					</div>
+				</div>
+			</div>
+			<div class="social">
+				<ul>
+					<li><a href="#"><i class="fab fa-instagram"></i></a></li>
+					<li><a href="#"><i class="fab fa-twitter"></i></a></li>
+					<li><a href="#"><i class="fa fa-facebook-official"></i></a></li>
+					<li><a href=""><i class="fab fa-youtube"></i></a></li>
+				</ul>
+			</div>
+			<div class="trailer">
+					<a href="https://youtu.be/VSF2xE07MvU">
+						<i class="fas fa-play-circle" ></i> 
+						<span title="watch now!">WATCH TRAILER</span>
+					</a>
+				</div>
+			<div class="slide"></div>
+		</div>
+
+		
+	</div>
+
+
+	<script type="text/javascript">
+		function toggle() {
+			var blur = document.getElementById('blur');
+			blur.classList.toggle('active');
+			var popup = document.getElements('popup');
+			popup.classList.toggle('active');
+		}
+	</script>
+
+</body>
+</html>

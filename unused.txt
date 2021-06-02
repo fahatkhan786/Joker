@@ -1,0 +1,48 @@
+<div class="details">
+				<span class="ratings">
+					ratings
+				</span>
+				<ul>
+					<li><span>Release date :</span> 2 October 2019 (India) </li>
+					<li><span>Director :</span> Todd Phillips </li>
+					<li><span>Actor :</span> Joaquin Phoenix </li>
+					<li><span>Box office :</span> 107.4 crTores USD </li>
+					<li><span>Budget :</span> $55–70 million </li>
+					<li><span>Awards :</span> Academy Award for Best Actor </li>
+					<li><span><a href=".more">Read more</a></span></li>
+				</ul>
+				<span class="more">
+					In Gotham City, mentally troubled comedian Arthur Fleck is disregarded and mistreated by society. He then embarks on a downward spiral of revolution and bloody crime. This path brings him face-to-face with his alter-ego: the Joker.
+				</span>
+			</div>
+
+.details{
+	position: absolute;
+	max-width: 40%;
+	top: 0%;
+	right: 20px;
+	bottom: 50px;
+	transform: translateY(50%);
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 20px 40px;
+	color: #fff;
+	background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5));
+}
+.details li{
+	list-style: none;
+}
+.details li span{
+	margin: 15px;
+	font-size: 15px;
+	font-weight: bold;
+	color: #ddd;
+}
+.details li a{
+	color: #00ff00;
+}
+.details li span a:hover{
+	text-decoration: underline;
+	cursor: pointer;
+}
